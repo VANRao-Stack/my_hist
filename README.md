@@ -93,11 +93,11 @@ The following would be the graph that would be plotted.
 
 ## Improvements
 
-Now obviously this wqas a project that was undertaken for a short period of time and hence there is a massive room for improvement. I have listed out some of those which could be implemented in the coming versions:
+Now obviously this was a project that was undertaken for a short period of time and hence there is a massive room for improvement. I have listed out some of those which could be implemented in the coming versions:
 
 * The fill function of the NamedHist uses a list in order to correspondingly rearange the given keyword arguments. But however this isn't exactly very efficient and since this is a project undertaken solely for the purpose of speed, the given function has to be modified to not just increase speed but also to decrease memory consumption. 
-* The same could be said about __getitem__() function which again may or may not employ a list in order to assit it to convert the user input into a format suitable to be fed into the super().__getitem__() function. 
-* The pull plot method currently can only plot those Histograms with only one axis object and hence some kind of extension has to be undertaken with it in order for it to be able to deal with multi dimensional pull plots. One workaround to this solution could be to plot the perspective in which the count is the y axis. Now the angle of viewing for this perspective should be such that that the loss in information is minimal, and hence methods such as PCA could be deployed for the same. 
+* The same could be said about \__getitem__()\ function which again may or may not employ a list in order to assist it to convert the user input into a format suitable to be fed into the super().\__getitem__()\ function. 
+* The pull plot method currently can only plot those Histograms with only one axis object and hence some kind of extension has to be undertaken with it in order for it to be able to deal with multi dimensional pull plots. One workaround to this problem could be to plot the perspective in which the count is the y axis. Now the angle of viewing for this perspective should be such that that the loss in information is minimal, and hence methods such as PCA could be deployed for the same. 
 
 ## Additional Notes
 
