@@ -102,4 +102,4 @@ Now obviously this wqas a project that was undertaken for a short period of time
 ## Additional Notes
 
 * Multiple versions of the source file had to be built before the final one was ready, please use the latest version (1.0 at the time of writing) in order to test any of the functions that have been written. 
-* The version was set from within the setup.py file instead of using the __version__. 
+* The version was set from within the setup.py file instead of using the \__version__\. 
