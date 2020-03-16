@@ -7,7 +7,7 @@ This project is aimed at adding a couple of new features to the project and also
 
 ## Axis Naming
 
-Before this project was undertaken the following code had to be executed in order to define and fill a Histogram consisting of objects. 
+Before this project was undertaken the following code had to be executed in order to define and fill a Histogram consisting of axes objects. 
 
 ```python
 # Data generation
