@@ -103,3 +103,5 @@ Now obviously this wqas a project that was undertaken for a short period of time
 
 * Multiple versions of the source file had to be built before the final one was ready, please use the latest version (1.0 at the time of writing) in order to test any of the functions that have been written. 
 * The version was set from within the setup.py file instead of using \__version__\. 
+* The source files can be found in the dist directory.
+* The sample Jupyter notebook showcasing the different features that were added could be found within the notebooks directory. 
