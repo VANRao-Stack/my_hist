@@ -1,0 +1,12 @@
+numpy>=1.13.3
+boost-histogram==0.6.2
+
+[dev]
+pytest>=5.0
+matplotlib>=3.0
+
+[mpl]
+matplotlib>=3.0
+
+[test]
+pytest>=5.0
