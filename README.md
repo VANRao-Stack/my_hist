@@ -51,7 +51,7 @@ from hist import NamedHist, axis
 h = NamedHist(
     axis.Regular(10, -1, 1, name="x"),
     axis.Regular(10, -1, 1, name="y"),
-    axis.bool(name="valid"),
+    axis.Bool(name="valid"),
 )
 
 h.fill(x=x, y=y, valid=valid)
