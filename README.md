@@ -97,7 +97,7 @@ Now obviously this was a project that was undertaken for a short period of time 
 
 * The fill function of the NamedHist uses a list in order to correspondingly rearange the given keyword arguments. But however this isn't exactly very efficient and since this is a project undertaken solely for the purpose of speed, the given function has to be modified to not just increase speed but also to decrease memory consumption. 
 * The same could be said about \__getitem__()\ function which again may or may not employ a list in order to assist it to convert the user input into a format suitable to be fed into the super().\__getitem__()\ function. 
-* The pull plot method currently can only plot those Histograms with only one axis object and hence some kind of extension has to be undertaken with it in order for it to be able to deal with multi dimensional pull plots. One workaround to this problem could be to plot the perspective in which the count is the y axis. Now the angle of viewing for this perspective should be such that that the loss in information is minimal, and hence methods such as PCA could be deployed for the same. 
+* The pull plot method currently can only plot those Histograms which are Gaussian in nature, and extending it would require adding two features, one the ability to pass the equation of the distribution, and the second the equation to calculate the pulls. Some standard pull plot equations could already be pre-installed onto the function but however I expect the majority to be added by the user during runtime. 
 
 ## Additional Notes
 
