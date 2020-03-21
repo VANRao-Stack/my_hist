@@ -66,7 +66,7 @@ class NamedHist(BaseHist):
 
         ---------
 
-        callable : the equation of the PDF to be plotted, in the example given a Gaussian distribution was
+        pdf : the equation of the PDF to be plotted, in the example given a Gaussian distribution was
 
             used
 
