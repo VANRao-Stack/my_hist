@@ -192,4 +192,38 @@ class NamedHist(BaseHist):
                 temp_dict[ind] = index[val.name]
         return BaseHist.__getitem__(self, temp_dict)
 
+        
+        
+    def __setitem__(self, index, value):
+        
+        """
+        Used to set the value of different values in the histogram
+        
+        Parameters
+        ----------
+        
+        index: formatted similar to that of the getitem, it specifies which of the given values is to be set
+        
+        value: the value to be set for the particular object
+        
+        """
+        
+        #check if instance of dict
+        if isinstance(index, dict):
+            
+            #if it is then modification to current format is maybe required
+            k = list(index.keys())
+            
+            #check if the keys are string
+            if isinstance(k[0], str):
+                
+                #if they are then modicfication is definetly required
+                for key in k:
+                    
+                    #perform those modifications to conver it to a format that's understood by the super.__setitem__() function
+                    for ind, axis in enumerate(self.axes):
+                        if key == axis.name:
+                            index[ind] = index.pop(key)
+                            break
 
+        return super().__setitem__(index, value)
